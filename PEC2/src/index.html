@@ -7,13 +7,64 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <header></header>
+  <body class="skinBodyIndex">
+
     <main class="globalSizeContainer skinMainIndexContainer">
-      <picture>
-        <source srcset="./assets/images/pexels-pixabay-54601.jpg" media="(min-width: 600px)" />
-        <img src="./assets/images/pexels-pixabay-54601.jpg" alt="Paisatge" />
+      <!--Imatge de fons-->
+      <picture class="globalSizePictureContainer skinPictureImg">
+        <source srcset="./assets/images/Portada.jpg" media="(min-width: 600px)" />
+        <img src="./assets/images/Portada.jpg" alt="Paisatge" />
       </picture>
+
+      <header class="skinHeaderIndex">
+        <nav class="globalSizeNav skinNavIndex">
+          <ul class="globalSizeList skinListHeaderIndex">
+            <li><a href="#">Index</a></li>
+            <li><a href="#">Index</a></li>
+            <li><a href="#">Index</a></li>
+            <li><a href="#">Index</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="globalSizeContainer skinGridSection">
+
+        <article class="globalSizeContainer skinArticleGrid tarjeta1">
+          <h3>Ponentes Destacados</h3>
+          <p>Conoce a los expertos en sostenibilidad</p>
+        </article>
+
+        <article class="globalSizeContainer skinArticleGrid tarjeta2">
+          <h3>Inscripción Abierta</h3>
+          <p>Regístrate ahora y asegura tu lugar</p>
+        </article>
+
+        <article class="globalSizeContainer skinArticleGrid tarjeta3">
+          <h3>Talleres y Cursos</h3>
+          <p>Aprende de los mejores en economía circular</p>
+        </article>
+
+        <article class="globalSizeContainer skinArticleGrid tarjeta4">
+          <h3>Talleres y Cursos</h3>
+          <p>Aprende de los mejores en economía circular</p>
+        </article>
+      </section>
+      <section class="globalSizeContainer skinGridSectionInfo">
+        <!-- Div de formulario de contacto -->
+        <div class="contact-form">
+          <h3>¿Tienes alguna sugerencia? Contáctanos</h3>
+          <p>Si tienes alguna duda o sugerencia, puedes ponerte en contacto con nosotros a través de este formulario.</p>
+          <a href="#" class="btn-contact">Ir al formulario de contacto</a> <!-- Este enlace llevará a la tercera página -->
+        </div>
+
+        <!-- Div de redes sociales -->
+        <div class="social-media">
+          <h3>Síguenos en...</h3>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+          <a href="https://twitter.com" target="_blank">Twitter</a> |
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </section>
     </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

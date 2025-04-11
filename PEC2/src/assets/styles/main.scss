@@ -23,7 +23,22 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+ @import "generic/base";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "objects/global";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+ @import "components/header";
+ @import "components/portada";
+
 
 /**
  * Do NOT include anything else in this file!
