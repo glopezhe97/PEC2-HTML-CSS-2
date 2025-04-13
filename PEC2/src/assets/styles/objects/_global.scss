@@ -1,8 +1,20 @@
-// Variables y resets si los tienes
+/*----------------------------*/
+/*#SECTION: CONTENEDOR GENERAL*/
+/*----------------------------*/
 
 .globalSizeContainer {
-    width: 100%;
-  }
+  width: 100%;
+}
+
+
+/*-----------------*/
+/*#SECTION: TITULOS*/
+/*-----------------*/
+
+.globalSizeTitles {
+  z-index: 1;
+}
+
 
   
 //   // Grid de artículos
