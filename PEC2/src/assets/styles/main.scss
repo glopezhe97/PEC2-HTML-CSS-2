@@ -37,12 +37,15 @@
 
 @import "objects/global";
 
+
+ @import "components/header";
+ @import "components/portada";
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
- @import "components/header";
- @import "components/portada";
+ @import "layouts/participants";
 
 
 /**

@@ -1,6 +1,12 @@
-.skinLinksHeader {
-    color: lab(97 3 1);
+.skinLinksHeaderIndex {
+    color: lab(97, 3, 1);
     &:hover {
         color: $color-white;
     }
 }
+.skinLinksHeader {
+    color: lab(70% -46 32);
+    &:hover {
+      color: hsl(142, 67%, 37%);
+    }
+  }
