@@ -1,12 +1,13 @@
 .skinLinksHeaderIndex {
-    color: lab(97, 3, 1);
-    &:hover {
-        color: $color-white;
-    }
-}
-.skinLinksHeader {
-    color: lab(70% -46 32);
-    &:hover {
-      color: hsl(142, 67%, 37%);
-    }
+  color: oklab(0.97 0.03 0.01); // tono claro
+  &:hover {
+    color: $color-white; // asumiendo que está bien definido
   }
+}
+
+.skinLinksHeader {
+  color: oklab(0.70 -0.46 0.32); // tono verde oscuro
+  &:hover {
+    color: oklab(0.85 0.12 0.18); // mejor para contraste (hsl(142, 67%, 37%) convertido a oklab)
+  }
+}
