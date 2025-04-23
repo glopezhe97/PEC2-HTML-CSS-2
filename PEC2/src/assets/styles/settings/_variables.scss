@@ -15,4 +15,7 @@ $color-primary-button: hsl(142, 67%, 37%);
 $theme-colors: (
   "primary": $color-primary-button
 );
+$card-subtitle-color: #4a6955;
 $btn-primary-color: #fff;    // Color del texto para .btn-primary
+$input-group-addon-bg: $color-titles-level1; // Color fondo span formulario
+$input-group-addon-color: #fff; //color texto span formulario

@@ -4,53 +4,53 @@
  */
 
 /**
- * Import variables
+ * 1. Settings – Variables y configuraciones
  */
+ @import "./settings/variables";
 
-@import "./settings/variables";
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "./custom/custom";
-
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
- */
-
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
+ /**
+  * 2. Tools – Librerías externas, mixins, funciones (Bootstrap entra aquí)
+  */
+ @import "../../../node_modules/bootstrap/scss/bootstrap";
+ @import "./custom/custom";
+ /**
+  * 3. Generic – Reset/normalize, estilos base globales
+  */
  @import "generic/base";
-
-
+ 
+ /**
+  * 4. Elements – Estilos para etiquetas HTML básicas
+  */
  @import "elements/links";
  @import "elements/titles";
  @import "elements/paragraph";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
-
-@import "objects/global";
-
-
- @import "components/header";
+ 
+ /**
+  * 5. Objects – Estructuras sin estilos visuales (wrappers, containers)
+  */
+ @import "objects/global";
+ 
+ /**
+  * 6. Components – Componentes visuales reutilizables (cards, botones, etc.)
+  */
  @import "components/portada";
-
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
- @import "layouts/participants";
- @import "layouts/jornada";
-
-
+ @import "components/contactForm";
+ 
+ /**
+  * 7. Layouts – Estructura principal del sitio (header, footer, grid)
+  */
+ @import "layouts/header";
+ 
+ /**
+  * 8. Pages – Estilos específicos para cada página
+  */
+ @import "pages/participants";
+ @import "pages/jornada";
+ @import "pages/contacto";
+ 
+ /**
+  * 9. Utilities – Clases utilitarias (opcional si tienes)
+  */
 /**
  * Do NOT include anything else in this file!
  */

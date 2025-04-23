@@ -1,13 +1,19 @@
+/* Para los enlaces de la clase skinLinksHeaderIndex */
 .skinLinksHeaderIndex {
-  color: oklab(0.97 0.03 0.01); // tono claro
-  &:hover {
-    color: $color-white; // asumiendo que está bien definido
-  }
+  color: oklab(0.90 0.01 0.00); /* casi blanco, ligeramente cálido */
 }
 
-.skinLinksHeader {
-  color: oklab(0.70 -0.46 0.32); // tono verde oscuro
-  &:hover {
-    color: oklab(0.85 0.12 0.18); // mejor para contraste (hsl(142, 67%, 37%) convertido a oklab)
-  }
+.skinLinksHeaderIndex:hover {
+  color: oklab(1 0 0); /* blanco puro */
+  font-weight: 700;
+}
+
+/* Para los enlaces de la clase skinLinksHeaderIndexGrid */
+.skinLinksHeaderIndexGrid {
+  color: rgb(50, 50, 50); /* Gris oscuro */
+}
+
+.skinLinksHeaderIndexGrid:hover {
+  color: rgb(30, 30, 30); /* Gris más oscuro o cercano al negro */
+  font-weight: 500;
 }

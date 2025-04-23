@@ -1,0 +1,20 @@
+/* Estilos generales para la sección de contacto */
+.contactInfoSection {
+  max-width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+
+/* Contenido de la lista dentro de la sección de contacto */
+.contactInfoSection ul {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
