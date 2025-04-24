@@ -39,8 +39,16 @@
 
 .skinHeaderJornada {
     background-color: hsl(95, 30%, 12%);
-    padding: 5px;
+    padding: 10px 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+@media (min-width: 600px) {
+    .skinLogo {
+        width: 5%;
+    }
+}
+
+
