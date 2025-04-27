@@ -24,28 +24,24 @@
 
   img {
     border-radius: 5px;
-    width: 100%; /* Asegurarse de que las imágenes se ajusten correctamente */
-    object-fit: cover; /* Para una mejor adaptación de la imagen */
+    width: 100%;
+    object-fit: cover;
   }
-}
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 700px) {
-  .carousel {
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 700px) {
     width: 100%;
     padding: 10px;
   }
-}
 
-@media (max-width: 500px) {
-  .carousel {
+  @media (max-width: 500px) {
     padding: 5px;
   }
+}
 
-  .skinMainJornada {
-    max-width: 100%;
-    padding: 10px;
-  }
+/* Estilo para listas */
+.skinUlJornada {
+  list-style: square;
 }
 
 /* Usando :is() */
@@ -115,11 +111,6 @@ aside {
     width: 100%;
     margin-top: 20px;
   }
-}
-
-/* Estilo para listas */
-.skinUlJornada {
-  list-style: square;
 }
 
 /* Container queries (media queries dentro de contenedores) */

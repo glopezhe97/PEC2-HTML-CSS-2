@@ -1,20 +1,57 @@
-/* Estilos generales para la sección de contacto */
-.contactInfoSection {
-  max-width: 100%;
-  text-align: center;
-  padding: 20px 0;
-  margin: 0 auto;
-}
+/* Declaramos las capas al principio */
+@layer base, contacto;
 
+/* Capa base (declaraciones globales) */
+@layer base {
+  a {
+    text-decoration: none;
+    color: inherit; /* Se asegura que el color de los enlaces herede el color del texto */
+  }
 
-/* Contenido de la lista dentro de la sección de contacto */
-.contactInfoSection ul {
-  list-style: none;
-  padding: 0;
-
-  li {
-    margin-bottom: 0.5rem;
+  /* Añadir más reglas globales si es necesario */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
   }
 }
 
+/* Capa específica para la sección de contacto */
+@layer contacto {
+  .contactInfoSection {
+    max-width: 100lvw;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+    background-color: #fff; /* Fondo blanco para la sección */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
 
+  .contactInfoSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contactInfoSection ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+  }
+
+  .contactInfoSection a {
+    color: #0066cc; /* Color para los enlaces */
+  }
+
+  .contactInfoSection a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+  }
+
+  /* Títulos */
+  .contactInfoSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+}

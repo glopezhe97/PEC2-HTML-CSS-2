@@ -17,7 +17,9 @@
   * 3. Generic – Reset/normalize, estilos base globales
   */
  @import "generic/base";
- 
+ @import "functions/pxToRem";
+
+
  /**
   * 4. Elements – Estilos para etiquetas HTML básicas
   */
