@@ -1,3 +1,4 @@
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -9,14 +10,22 @@
  @import "./settings/variables";
 
  /**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+@import url("npm:@fortawesome/fontawesome-free/css/all.css");
+
+ /**
   * 2. Tools – Librerías externas, mixins, funciones (Bootstrap entra aquí)
   */
- @import "../../../node_modules/bootstrap/scss/bootstrap";
+    @import "../../../node_modules/bootstrap/scss/bootstrap";
  @import "./custom/custom";
  /**
   * 3. Generic – Reset/normalize, estilos base globales
   */
  @import "generic/base";
+
  @import "functions/pxToRem";
 
 

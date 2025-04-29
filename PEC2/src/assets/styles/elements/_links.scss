@@ -1,16 +1,27 @@
+
 /* Para los enlaces de la clase skinLinksHeaderIndex */
-.skinLinksHeaderIndex {
+.skinLinksHeaderIndex,
+.skinLinksHeaderIndexGrid {
   color: oklab(0.90 0.01 0.00); /* casi blanco, ligeramente cálido */
+  text-decoration: none;
+  font-size: 0.90rem;
 }
 
-.skinLinksHeaderIndex:hover {
+.skinLinksHeaderIndex:hover,
+.skinLinksHeaderIndexGrid:hover {
   color: oklab(1 0 0); /* blanco puro */
   font-weight: 700;
 }
 
+@media (min-width: 600px) {
+
+.skinLinksHeaderIndex{
+  font-size: 1rem;
+}
 /* Para los enlaces de la clase skinLinksHeaderIndexGrid */
 .skinLinksHeaderIndexGrid {
   color: rgb(50, 50, 50); /* Gris oscuro */
+  font-size: 1rem;
 }
 
 .skinLinksHeaderIndexGrid:hover {
@@ -20,5 +31,9 @@
 
 /*footer*/
 
+}
 
-
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}

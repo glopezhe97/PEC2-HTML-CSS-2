@@ -1,12 +1,13 @@
-@layer base, elements, objects, components;
+@layer baseParticipants, elements, objects, components;
 
 /* ----------- BASE ----------- */
-@layer base {
+@layer baseParticipants {
   .participants-section {
     padding: 40px 10px;
     text-align: center;
     background-color: #f6f6f6;
     container-type: inline-size;
+    container-name: participants;
   }
 }
 
@@ -51,10 +52,8 @@
 }
 
 /* ----------- COMPONENTS ----------- */
-@layer components {
-  @container (min-width: 500px) {
+  @container participants (min-width: 500px) {
     .participant-card {
       background-color: #ecf2ff;
     }
   }
-}
